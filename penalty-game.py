@@ -15,7 +15,12 @@ class CreateGame:
 
 class CreatePlayers:
     """a class to create/update the players"""
-    pass
+    def __init__(self, player_name):
+        self._player_name = player_name
+
+    def get_name(self):
+        """returns the players name"""
+        return self._player_name
 
 
 class PlayGame:
